@@ -1,8 +1,10 @@
 package spring.gizatullin.services;
 
+import spring.gizatullin.exceptions.AppException;
+
 /**
  * @author pgizatullin
  */
 public interface QuizService {
-    void startQuiz();
+    boolean doQuiz() throws AppException;
 }
