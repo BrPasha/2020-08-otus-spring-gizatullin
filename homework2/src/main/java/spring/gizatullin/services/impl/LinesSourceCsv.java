@@ -23,7 +23,6 @@ import java.util.List;
 @Service
 public class LinesSourceCsv implements LinesSource {
 
-    private static String DELIMETER = ";";
     @Value("${questions}")
     private Resource csvSource;
 

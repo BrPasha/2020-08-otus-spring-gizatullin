@@ -21,10 +21,6 @@ public class Application {
     public static void main(String[] args) {
         AnnotationConfigApplicationContext context = new AnnotationConfigApplicationContext(Application.class);
         QuizService service = context.getBean(QuizService.class);
-        try {
-            service.doQuiz();
-        } catch (AppException ex) {
-            System.out.println(ex.getMessage());
-        }
+        service.doQuiz();
     }
 }

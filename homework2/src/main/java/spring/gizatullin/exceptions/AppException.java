@@ -3,7 +3,7 @@ package spring.gizatullin.exceptions;
 /**
  * @author pgizatullin
  */
-public class AppException extends Exception{
+public class AppException extends RuntimeException {
 
     public AppException(String message) {
         super(message);
